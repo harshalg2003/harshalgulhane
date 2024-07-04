@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Italiana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
+
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f7f8;
+  /* position: relative; */
+}
+
+.navbar {
+  display: flex;
+  /* top: 0; */
+  padding: 20px 100px 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f5f7f8;
+
+  /* height: ; */
+}
+
+#logo {
+  font-family: "Italiana", sans-serif;
+  font-size: 3vmax;
+  font-weight: 400;
+}
+
+.navBtnList {
+  display: flex;
+  gap: 30px;
+  font-size: large;
+}
+
+.navBtnList li {
+
+  font-family: "Istok Web", sans-serif;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: fit-content;
+}
+
+.nav-btn {
+
+
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+
+}
+
+.arrow-icon {
+
+  width: 20px;
+  display: none;
+}
+
+
+.nav-active+img {
+  display: block;
+
+}
+
+.home-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+  gap: 10px;
+}
+
+#greetingMsg {
+  background-color: rgb(217, 217, 217, 0.7);
+  display: inline-block;
+  width: fit-content;
+  padding: 20px;
+  font-size: 3vmax;
+  font-family: "Italiana", sans-serif;
+  border-radius: 80px 70px 70px 0;
+  font-weight: 500;
+}
+
+.home-my-intro {
+
+  font-size: 7vmax;
+  font-family: "Italiana", sans-serif;
+  width: 90vmax;
+  text-align: center;
+
+}
+
+.home-btn-cont {
+
+  display: flex;
+  padding: 5px;
+  gap: 50px;
+}
+
+.home-btn {
+
+  background-color: rgb(217, 217, 217, 0.7);
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2vmax;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 500;
+  border-bottom: 3px solid black;
+  border-radius: 2px 2px 0 0;
+
+}
+
+.about {
+
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 2vh;
+  align-items: center;
+  position: relative;
+  background-color: rgb(245, 245, 245, 0.3);
+
+}
+
+
+.cont-heading {
+
+  font-size: 4vmax;
+  font-family: "Italiana", sans-serif;
+  margin-top: 2vh;
+  display: inline-flex;
+  height: fit-content;
+
+}
+
+.about-back-img {
+
+  position: absolute;
+  width: 55%;
+  height: 90%;
+  top: 17vh;
+  right: 14vw;
+  z-index: -1;
+
+}
+
+.about-info-cont {
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.profile-image {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 80%;
+  border-radius: 200px 200px 0px 200px;
+  margin-top: 8vh;
+
+}
+
+.profile-image img {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 200px 200px 0px 200px;
+}
+
+
+.about-text {
+
+  width: 60%;
+  height: 90%;
+  padding-left: 3vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 3vh;
+
+}
+
+
+.about-sub-heading {
+
+  font-size: 2.8vmax;
+  font-family: "Italiana", sans-serif;
+  font-weight: 500;
+
+}
+
+.about-info-text {
+
+  width: 90%;
+  font-size: 1.4vmax;
+  font-family: "Istock", sans-serif;
+  line-height: 30px;
+  word-spacing: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.connect-linkedin {
+
+  background-color: rgb(217, 217, 217, 0.6);
+  font-size: 1.3vmax;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Istock", sans-serif;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 3px solid black;
+
+}
+
+.connect-linkedin img {
+
+  width: 30px;
+  height: 30px;
+}
+
+
+.services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #F5F7F8;
+  padding-top: 2vh;
+  gap: 5vh;
+
+}
+
+.service-sub-container {
+
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vmax;
+
+}
+
+.service-card {
+
+  width: 25%;
+  height: 70%;
+  background-color: rgb(217, 217, 217, 0.3);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  padding-top: 7vh;
+  border-bottom: 5px solid black;
+
+}
+
+
+
+.service-card:hover {
+
+  transform: scale(1.05);
+}
+
+
+.service-name {
+
+  font-family: "Italiana", sans-serif;
+  font-size: 2vmax;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.service-info {
+
+  width: 80%;
+  text-align: center;
+  font-size: 1.3vmax;
+  font-family: "Istock", sans-serif;
+  font-weight: 100;
+}
+
+.projects {
+  width: 100%;
+  height: 140vh;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2vh;
+  gap: 7vh;
+  padding-bottom: 10vh;
+  background-color: #F5F7F8;
+}
+
+
+.project-sub-container {
+
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(217, 217, 217, 0.2);
+}
+
+.project-sub-container:nth-child(odd) {
+
+  flex-direction: row-reverse;
+
+}
+
+.project-left {
+
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4vh;
+  padding-left: 30px;
+}
+
+.project-type {
+
+  font-family: 'Istock', sans-serif;
+  font-size: 1.2vmax;
+  font-weight: 500;
+  background-color: rgb(217, 217, 217, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.project-name {
+
+  font-family: "Italiana", sans-serif;
+  font-size: 2vmax;
+  font-weight: 500;
+}
+
+.project-info {
+
+  width: 80%;
+  text-align: start;
+  font-size: 1.1vmax;
+  font-family: "Istock", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.project-right {
+
+  width: 50%;
+  height: 100%;
+
+}
+
+
+.contact {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding-top: 2vh;
+
+}
+
+#contact-form {
+
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  gap: 20px;
+}
+
+.email-submit {
+
+  width: 90%;
+  display: flex;
+
+
+}
+
+input[type="email"] {
+  width: 80%;
+  height: 7vh;
+  border: none;
+  padding-left: 10px;
+  font-family: "Istock", sans-serif;
+  font-size: 1vmax;
+  letter-spacing: 1px;
+}
+
+
+input[type="submit"] {
+  width: 20%;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: "Istock", sans-serif;
+  font-size: 1vmax;
+  letter-spacing: 1px;
+
+}
+
+.message {
+  width: 90%;
+
+}
+
+.message input[type="text"] {
+
+  width: 100%;
+  height: 300px;
+  border: none;
+  font-family: "Istock", sans-serif;
+  font-size: 1vmax;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+
+}
+
+
+input[type="text"]::placeholder {
+
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 1vmax;
+
+
+}
+
+.footer {
+
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 10vh;
+  padding-bottom: 5px;
+}
+
+.social-icons {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.social-icons img:hover {
+
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.social-icons img:nth-child(even) {
+
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons img:nth-child(odd) {
+
+  width: 55px;
+  height: 55px;
+}
+
+.footer-text {
+
+  font-family: "Istock", sans-serif;
+}
+
+.footer a {
+
+  position: absolute;
+  right: 4vmax;
+  top: 35%;
+  font-size: 1.5vmax;
+  font-family: "Istock", sans-serif;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
